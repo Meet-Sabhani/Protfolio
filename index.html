@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Sabhani - Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1 class="logo"><span>M</span>eet</h1>
+        <ul id="sideMenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#Contact">Content</a></li>
+          <i class="ri-close-circle-line fas" onclick="closeMenu()" id="close"></i>
+        </ul>
+        <i class="ri-menu-line" onclick="openMenu()" id="close"></i>
+      </nav>
+      <div class="header-text">
+        <p>Front-End Developer</p>
+        <h1>Hi I'm <span>Meet</span> <br> Sabhani From India</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================About===================== -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/Meet-2.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-titel">About Meet</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta nesciunt unde sunt, rerum ea nam quos
+            sapiente fuga accusantium voluptates incidunt nostrum temporibus exercitationem, explicabo ex cumque fugiat
+            sint possimus!</p>
+          <div class="tab-titels">
+            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('projects')">Projects</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+              <li><span>Web Development</span><br>Web Development</li>
+              <li><span>App Development</span><br>App Developmen</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="projects">
+            <ul>
+              <li><span>University Website</span><br>Designing website for a University</li>
+              <li><span>Quise app</span><br>Quase game Website </li>
+              <li><span>Image Search</span><br>Image Search website</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2023</span><br>Front-End Developer At LogicRays Academy </li>
+              <li><span>2023</span><br>B.com at Gujarat University </li>
+              <li><span>2021</span><br>12 Commerce</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------------- Service ----------------------->
+
+  <div id="service">
+    <div class="container">
+      <h1 class="sub-titel">My Service</h1>
+      <div class="Service-list">
+        <div>
+          <i class="ri-code-s-slash-line"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem voluptatibus odio magni, pariatur
+            sunt accusantium?</p>
+          <a href="">Learn more</a>
+        </div>
+        <div>
+          <i class="ri-crop-line"></i>
+          <h2>UI/UX Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem voluptatibus odio magni, pariatur
+            sunt accusantium?</p>
+          <a href="">Learn more</a>
+        </div>
+        <div>
+          <i class="ri-code-box-line"></i>
+          <h2>App Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quidem voluptatibus odio magni, pariatur
+            sunt accusantium?</p>
+          <a href="">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------------- Portfolio ------------------------- -->
+
+  <div id="Portfolio">
+    <div class="container">
+      <h1 class="sub-titel">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="">
+          <div class="layer">
+            <h3>Social Media Website</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi placeat ad omnis illum assumenda
+              officiis?</p>
+            <a href=""><i class="ri-arrow-right-up-line"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png" alt="">
+          <div class="layer">
+            <h3>Social Media Website</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi placeat ad omnis illum assumenda
+              officiis?</p>
+            <a href=""><i class="ri-arrow-right-up-line"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" alt="">
+          <div class="layer">
+            <h3>Social Media Website</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi placeat ad omnis illum assumenda
+              officiis?</p>
+            <a href=""><i class="ri-arrow-right-up-line"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="" class="btn">See More</a>
+    </div>
+  </div>
+  <!-- ------------------- contect ---------------- -->
+
+  <div id="Contact">
+    <div class="container">
+      <div class="ContactRow">
+        <div class="Contact-left">
+          <h1 class="sub-titel contactMe">Contact Me</h1>
+          <p><i class="ri-mail-line"></i> meetsabhani18@gmail.com</p>
+          <p><i class="ri-phone-line"></i> +91 7016232400</p>
+          <div class="social-icons">
+            <a href="https://github.com/Meet-Sabhani" target="_blank"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/meet-sabhani-548829196" target="_blank"><i
+                class="ri-linkedin-box-fill"></i></a>
+            <a href="https://instagram.com/patel__meet__18?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i
+                class="ri-instagram-line"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100068815945332&mibextid=ZbWKwL" target="_blank"><i
+                class="ri-facebook-circle-fill"></i></a>
+            <a href="https://x.com/sabhani_meet?t=Tj6ZNShhwo1G6yYfjRT1qg&s=09" target="_blank"><i
+                class="ri-twitter-x-fill"></i></a>
+          </div>
+          <a href="Meet resume.pdf" download class="btn btn2">Download Cv</a>
+        </div>
+        <div class="Contact-Right">
+          <form action="" name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Massage"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg" style="margin-top: -40px;"></span>
+        </div>
+      </div>
+    </div>
+    <div class="conpyright">Copyright &copy; Meet. Made with <i class="ri-heart-fill"></i> by Meet Sabhani</div>
+  </div>
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-links");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-links");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sideMenu = document.getElementById("sideMenu");
+    function openMenu() {
+      sideMenu.style.right = "0";
+    }
+    function closeMenu() {
+      sideMenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyx9GHDj9pByhGU8fJIIRAdFe_nd1nOuv37svUC0TBLdWKiGWWMsUfAO8m-QK6xe2nh/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Massage sent successfully"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
