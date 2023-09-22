@@ -148,6 +148,7 @@ nav ul li a:hover::after {
   margin-top: 50px;
 }
 .Service-list div {
+  /* width: 80vw; */
   background: #262626;
   padding: 30px;
   font-size: 13px;
@@ -330,13 +331,13 @@ form .btn2 {
   color: #ff004f;
 }
 
-/* -------------- css for small screen------- */
+/* -------------- css MEdia Quary for small screen------- */
 
 #close {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 733px) {
   #header {
     background-image: url(images/phone-back.jpg);
     background-size: cover;
@@ -405,6 +406,11 @@ form .btn2 {
     font-size: 16px;
     margin-right: 20px;
   }
+
+
+  /* ------------- service -------- */
+  .Service-list div {
+    width: 80vw;}
   /* ----------------contect -------------- */
   .ContactRow {
     display: block;
